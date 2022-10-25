@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>I_Version</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <PackageId>I-Version</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Ben Bierens</Authors>
+    <Company>ThatBen</Company>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Language>EN-US</Language>
+    <Title>I-Version</Title>
+    <Description>A class and an interface for accessing environment variables.</Description>
+    <RepositoryUrl>https://github.com/benbierens/I-Version</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+</Project>
